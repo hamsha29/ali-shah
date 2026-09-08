@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MY GAME — Enter the Darkness</title>
+
+  <!-- Gaming fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="MY GAME — cinematic, premium dark-vibe gaming storefront." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <!-- Replace with your logo SVG at assets/logo.svg -->
+        <img src="assets/logo.svg" alt="MY GAME logo" class="logo" />
+        <span class="brand-text">MY GAME</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#game">Game</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-glow" id="buyNowTop">BUY NOW</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy glass">
+          <h1 class="title">MY GAME</h1>
+          <p class="tagline">Enter the Darkness. Master the Game.</p>
+
+          <p class="meta">
+            <span class="label">Digital Game • Instant Delivery</span>
+            <span class="price">PKR <strong id="heroPrice">1,000</strong></span>
+          </p>
+
+          <div class="hero-cta">
+            <button id="buyNowHero" class="btn btn-primary btn-buy glow-large">BUY NOW — PKR <span id="heroPriceInline">1,000</span></button>
+            <a href="#screenshots" class="btn btn-ghost">View Screenshots</a>
+          </div>
+
+          <ul class="hero-highlights">
+            <li>High-octane combat</li>
+            <li>Immersive cinematic soundtrack</li>
+            <li>Single-player campaign + online leaderboards</li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <!-- Replace hero.jpg -->
+          <div class="art-wrap glass">
+            <img src="assets/hero.jpg" alt="MY GAME hero artwork" class="hero-img" />
+            <div class="art-overlay neon-gradient"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section id="game" class="section">
+      <div class="container">
+        <h2 class="section-title neon-red">About the Game</h2>
+
+        <div class="product-grid">
+          <div class="product-artwork glass">
+            <img src="assets/screenshot1.jpg" alt="Game artwork" />
+          </div>
+
+          <div class="product-details glass">
+            <h3>MY GAME</h3>
+            <p class="product-desc">A cinematic, dark-futuristic action-adventure where you master the shadows and climb the ranks of an unforgiving world. Fight, craft, and dominate — or vanish into the night.</p>
+
+            <div class="features">
+              <h4>Features</h4>
+              <ul>
+                <li>Story-driven campaign (20+ hours)</li>
+                <li>Dynamic lighting & realistic sound design</li>
+                <li>Advanced AI and challenge modes</li>
+                <li>Customization & leaderboards</li>
+              </ul>
+            </div>
+
+            <div class="sys-reqs">
+              <h4>System Requirements</h4>
+              <div class="req-columns">
+                <div>
+                  <strong>Minimum</strong>
+                  <ul>
+                    <li>OS: Windows 10 (64-bit)</li>
+                    <li>CPU: Intel i5</li>
+                    <li>RAM: 8 GB</li>
+                    <li>GPU: GTX 970</li>
+                    <li>Disk: 20 GB</li>
+                  </ul>
+                </div>
+                <div>
+                  <strong>Recommended</strong>
+                  <ul>
+                    <li>OS: Windows 11 (64-bit)</li>
+                    <li>CPU: Intel i7</li>
+                    <li>RAM: 16 GB</li>
+                    <li>GPU: RTX 2060</li>
+                    <li>Disk: 30 GB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="version">Version: <strong id="versionLabel">1.0.0</strong></p>
+
+            <div class="product-cta">
+              <button class="btn btn-primary btn-buy glow-large" data-price="1000" id="buyNowProduct">BUY NOW — PKR <span id="productPrice">1,000</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2 class="section-title neon-purple">Editions & Pricing</h2>
+
+        <div class="pricing-cards">
+          <div class="card glass card-std">
+            <h3>Standard Edition</h3>
+            <p class="price-large">PKR <span class="price-val">1,000</span></p>
+            <ul>
+              <li>Base game</li>
+              <li>Instant digital delivery</li>
+            </ul>
+            <button class="btn btn-outline btn-buy" data-price="1000" data-edition="Standard">Buy Standard</button>
+          </div>
+
+          <div class="card glass card-deluxe neon-border">
+            <div class="ribbon">Popular</div>
+            <h3>Deluxe Edition</h3>
+            <p class="price-large">PKR <span class="price-val">1,500</span></p>
+            <ul>
+              <li>Base game + Digital OST</li>
+              <li>Exclusive skin pack</li>
+            </ul>
+            <button class="btn btn-primary btn-buy" data-price="1500" data-edition="Deluxe">Buy Deluxe</button>
+          </div>
+
+          <div class="card glass card-ult">
+            <h3>Ultimate Edition</h3>
+            <p class="price-large">PKR <span class="price-val">2,000</span></p>
+            <ul>
+              <li>All deluxe content</li>
+              <li>Season pass + early access</li>
+            </ul>
+            <button class="btn btn-outline btn-buy" data-price="2000" data-edition="Ultimate">Buy Ultimate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section id="screenshots" class="section">
+      <div class="container">
+        <h2 class="section-title neon-red">Screenshots</h2>
+        <div class="screens-grid">
+          <img src="assets/screenshot1.jpg" alt="Screenshot 1" class="glass" />
+          <img src="assets/screenshot2.jpg" alt="Screenshot 2" class="glass" />
+          <img src="assets/screenshot3.jpg" alt="Screenshot 3" class="glass" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2 class="section-title neon-purple">FAQ</h2>
+
+        <div class="faq-grid">
+          <details class="glass">
+            <summary>How do I receive the game?</summary>
+            <p>After successful payment you’ll receive a confirmation with a download link and instructions. Delivery is instant for most payment methods.</p>
+          </details>
+
+          <details class="glass">
+            <summary>What payment methods are available?</summary>
+            <p>Easypaisa, JazzCash, and Bank Transfer are supported. You can also contact support for alternate arrangements.</p>
+          </details>
+
+          <details class="glass">
+            <summary>Is the game available for PC?</summary>
+            <p>Yes — this build targets Windows 10/11 (64-bit). See system requirements for details.</p>
+          </details>
+
+          <details class="glass">
+            <summary>Can I get support after purchasing?</summary>
+            <p>Yes — support is available via the contact form or email. Keep your purchase receipt.</p>
+          </details>
+
+          <details class="glass">
+            <summary>Is the purchase refundable?</summary>
+            <p>Refund policy: refunds are handled case-by-case. Contact support within 14 days with your receipt.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info glass">
+          <h2>Contact</h2>
+          <p><strong>Location:</strong> Karachi, Pakistan</p>
+          <p>Follow us on social media for updates and support.</p>
+          <div class="socials">
+            <a href="#" aria-label="Twitter" class="social-icon">T</a>
+            <a href="#" aria-label="Facebook" class="social-icon">f</a>
+            <a href="#" aria-label="Instagram" class="social-icon">I</a>
+            <a href="#" aria-label="Discord" class="social-icon">D</a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form glass" onsubmit="return handleContactSubmit(event)">
+          <h3>Send us a message</h3>
+          <label>
+            <span>Name</span>
+            <input type="text" id="contactName" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="contactEmail" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="contactMessage" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="MY GAME" class="logo-small" />
+        <p class="muted">MY GAME — cinematic action with a dark-futuristic edge.</p>
+        <p>Karachi, Pakistan</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="#home">Home</a>
+        <a href="#game">Game</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2026 MY GAME. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="modal" aria-hidden="true">
+    <div class="modal-panel glass">
+      <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+      <div class="modal-head">
+        <h3>Checkout</h3>
+        <p id="checkoutEdition">Standard • PKR <span id="checkoutPrice">1,000</span></p>
+      </div>
+
+      <form id="checkoutForm" onsubmit="return handleCheckout(event)" class="checkout-form">
+        <div class="form-row">
+          <label>Full Name
+            <input type="text" id="custName" required />
+          </label>
+          <label>Email
+            <input type="email" id="custEmail" required />
+          </label>
+        </div>
+
+        <div class="form-row payment-row">
+          <p>Select payment method</p>
+          <div class="pay-options">
+            <label class="pay-card">
+              <input type="radio" name="payMethod" value="easypaisa" checked />
+              <div>
+                <strong>Easypaisa</strong>
+                <small>Mobile wallet (Pakistan)</small>
+              </div>
+            </label>
+
+            <label class="pay-card">
+              <input type="radio" name="payMethod" value="jazzcash" />
+              <div>
+                <strong>JazzCash</strong>
+                <small>Mobile wallet (Pakistan)</small>
+              </div>
+            </label>
+
+            <label class="pay-card">
+              <input type="radio" name="payMethod" value="bank" />
+              <div>
+                <strong>Bank Transfer</strong>
+                <small>Bank account instructions after submit</small>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>Notes (optional)
+            <input type="text" id="custNotes" placeholder="e.g., transaction reference" />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary btn-block">Pay PKR <span id="payNowPrice">1,000</span></button>
+        </div>
+
+        <p class="muted note">This demo simulates a checkout. Replace with your payment integration (Easypaisa/JazzCash API or bank reconciliation).</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
